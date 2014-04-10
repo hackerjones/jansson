@@ -1,0 +1,9 @@
+*.exe
+*.uvgui*
+*.uvopt
+*.dep
+lst*/
+obj*/
+*.Scr
+*.lib
+*.bak

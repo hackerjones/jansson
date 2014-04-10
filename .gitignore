@@ -31,11 +31,3 @@ stamp-h1
 /jansson_private_config.h
 /build
 *.exe
-*.uvgui*
-*.uvopt
-*.dep
-lst*/
-obj*/
-*.Scr
-*.lib
-*.bak
