@@ -442,7 +442,7 @@
                   <MiscControls></MiscControls>
                   <Define>HAVE_STDINT_H</Define>
                   <Undefine></Undefine>
-                  <IncludePath>..\keil</IncludePath>
+                  <IncludePath>..\uVision</IncludePath>
                 </VariousControls>
               </Cads>
               <Aads>
