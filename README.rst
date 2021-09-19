@@ -1,9 +1,9 @@
 Jansson README
 ==============
 
-.. image:: https://travis-ci.org/akheron/jansson.png
-  :target: https://travis-ci.org/akheron/jansson
-  
+.. image:: https://github.com/akheron/jansson/workflows/tests/badge.svg
+  :target: https://github.com/akheron/jansson/actions
+
 .. image:: https://ci.appveyor.com/api/projects/status/lmhkkc4q8cwc65ko
   :target: https://ci.appveyor.com/project/akheron/jansson
 
@@ -15,7 +15,7 @@ data. Its main features and design principles are:
 
 - Simple and intuitive API and data model
 
-- Comprehensive documentation
+- `Comprehensive documentation`_
 
 - No dependencies on other libraries
 
@@ -30,8 +30,20 @@ source distribution for details.
 Compilation and Installation
 ----------------------------
 
-If you obtained a source tarball, just use the standard autotools
-commands::
+You can download and install Jansson using the `vcpkg <https://github.com/Microsoft/vcpkg/>`_ dependency manager:
+
+.. code-block:: bash
+
+    git clone https://github.com/Microsoft/vcpkg.git
+    cd vcpkg
+    ./bootstrap-vcpkg.sh
+    ./vcpkg integrate install
+    vcpkg install jansson
+
+The Jansson port in vcpkg is kept up to date by Microsoft team members and community contributors. If the version is out of date, please `create an issue or pull request <https://github.com/Microsoft/vcpkg/>`_ on the vcpkg repository.
+
+If you obtained a `source tarball`_ from the "Releases" section of the main
+site just use the standard autotools commands::
 
    $ ./configure
    $ make
@@ -51,7 +63,7 @@ use autoreconf::
 Documentation
 -------------
 
-Documentation is available at http://jansson.readthedocs.org/en/latest/.
+Documentation is available at http://jansson.readthedocs.io/en/latest/.
 
 The documentation source is in the ``doc/`` subdirectory. To generate
 HTML documentation, invoke::
@@ -63,5 +75,7 @@ Then, point your browser to ``doc/_build/html/index.html``. Sphinx_
 
 
 .. _Jansson: http://www.digip.org/jansson/
+.. _`Comprehensive documentation`: http://jansson.readthedocs.io/en/latest/
 .. _`MIT license`: http://www.opensource.org/licenses/mit-license.php
+.. _`source tarball`: http://www.digip.org/jansson#releases
 .. _Sphinx: http://sphinx.pocoo.org/
